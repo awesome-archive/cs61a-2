@@ -12,4 +12,6 @@ To run ants, run `python3 ants.gui` in terminal or open the html file.
 This version of the scheme interpreter runs in the terminal. It was written in python. Run `python3 scheme.py` to run the scheme interpreter in terminal.
 
 ## Scheme Art Contest
-My entry for the Spring 2018 scheme art contest. I created a 2D image using turtle graphics and the scheme interpreter that we built in this class as part of a previous project (see above).
+My entry for the Spring 2018 scheme art contest. I created a 2D image using turtle graphics and the scheme interpreter that we built in this class as part of a previous project (see above). Here is the final version!
+
+![Scheme Art](https://raw.githubusercontent.com/stella-lu/cs61a/master/scheme_contest/scheme_art.png)
