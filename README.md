@@ -43,6 +43,13 @@ To spice up the game, we will play with some special rules:
 - Pig Out. If any of the dice outcomes is a 1, the current player's score for the turn is 1.
 - Free Bacon. A player who chooses to roll zero dice scores 2 more than the absolute difference between the digits in the opponent's total score.
 
+## Maps
+To run maps, run `python3 recommend.py`. Use `-r name` to use your personal profile rather than the default (add new profiles in the users file. Using `-q` filters by category of restaurant and `-k` changes the number of clusters. You can get a list of restaurants with `python3 recommend.py -r`. 
+
+In this project, you will create a visualization of restaurant ratings using machine learning and the Yelp academic dataset. In this visualization, Berkeley is segmented into regions, where each region is shaded by the predicted rating of the closest restaurant (yellow is 5 stars, blue is 1 star). Specifically, the visualization you will be constructing is a Voronoi diagram.
+
+Each dot represents a restaurant. The color of the dot is determined by the restaurant's location. For example, downtown restaurants are colored green. The user that generated this map has a strong preference for Southside restaurants, and so the southern regions are colored yellow.
+
 ## Scheme
 This version of the scheme interpreter runs in the terminal. It was written in python. Run `python3 scheme.py` to run the scheme interpreter in terminal.
 
