@@ -6,7 +6,42 @@ It comes included with the files required for functionality, but also the files 
 Note: Not all code was written by me. Skeleton code was provided by the professor and instructors. My own code can be found between "BEGIN PORBLEM XX" and "END PROBLEM XX" labels in the code.
 
 ## Ants
-To run ants, run `python3 ants.gui` in terminal or open the html file.
+To run ants, run `python3 ants.gui` or open the html file.
+
+A game of Ants Vs. SomeBees consists of a series of turns. In each turn, new bees may enter the ant colony. Then, new ants are placed. Finally, all insects (ants, then bees) take individual actions. Bees either try to move toward the end of the tunnel or they sting ants in their way. Ants perform a different action depending on their type, such as throwing leaves at the bees. The game ends either when a bee reaches the ant queen (you lose), or the entire bee flotilla has been vanquished (you win).
+
+Core concepts
+- The Colony. This is where the game takes place. The colony consists of several places that are chained together to form a tunnel where bees can travel through. The colony has some quantity of food that can be expended to deploy ant troops.
+- Places. A place links to another place to form a tunnel. The player can place a single ant into each place. However, there can be many bees in a single place.
+- The Hive. This is the place where bees originate. Bees exit the hive to enter the ant colony.
+- Ants. Ants are the usable troops in the game that the player places into the colony. Each type of ant takes a different action and requires a different amount of food to place. The two most basic ant types are the HarvesterAnt, which adds one food to the colony during each turn, and the ThrowerAnt, which throws a leaf at a bee each turn. You will be implementing many more.
+- Bees. Bees are the antogonistic troops in the game that the player must defend the colony from. Each turn, a bee either advances to the next place in the tunnel if no ant is in its way, or it stings the ant in its way. Bees win when at least one bee reaches the end of a tunnel.
+- Queen Ant: There is one queen ant in the whole colony. She is able to attack bees but she also has a special ability of fortifying the other ant troops. Bees can also win if they destroy the queen ant.
+
+Types of characters:
+- Harvester ant: Cost 2, Armor 1
+- Thrower ant: Cost 3, Armor 1
+- Short thrower: Cost 2, Armor 1
+- Long thrower: Cost 2, Armor 1
+- Fire ant: Cost 5, Armor 1
+- Hungry ant: Cost 4, Armor 1
+- Ninja ant: Cost 5, Armor 1
+- Wall ant: Cost 4, Armor 4
+- Bodyguard ant: Cost 4, Armor 2
+- Tank ant: Cost 6, Armor 2
+- Scuba thrower: Cost 6, Armor 1
+- Queen ant: Cost 7, Armor 1
+- Slow thrower: Cost 4, Armor 1
+- Stun thrower: Cost 6, Armor 1
+
+## Hog
+To run hog, run `python3 hog_gui.py`. 
+
+In Hog, two players alternate turns trying to be the first to end a turn with at least 100 total points. On each turn, the current player chooses some number of dice to roll, up to 10. That player's score for the turn is the sum of the dice outcomes.
+
+To spice up the game, we will play with some special rules:
+- Pig Out. If any of the dice outcomes is a 1, the current player's score for the turn is 1.
+- Free Bacon. A player who chooses to roll zero dice scores 2 more than the absolute difference between the digits in the opponent's total score.
 
 ## Scheme
 This version of the scheme interpreter runs in the terminal. It was written in python. Run `python3 scheme.py` to run the scheme interpreter in terminal.
