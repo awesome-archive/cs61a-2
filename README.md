@@ -1,4 +1,4 @@
-# cs61a
+# Stella's CS 61A Projects
 This repository contains the projects I did in UC Berkeley's CS61a course, "Structure and Interpretation of Computer Programs".
 
 It comes included with the files required for functionality, but also the files the course instructors and professor used to check and grade our work. Maybe in the future I will prune these files so that it only contains the necessary bits. 
